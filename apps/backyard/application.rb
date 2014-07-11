@@ -1,6 +1,6 @@
 require 'lotus'
 
-module LianBackyard
+module Backyard
   class Application < Lotus::Application
     configure do
 
@@ -11,7 +11,11 @@ module LianBackyard
         'views'
       ]
 
-      layout :application
+      layout :backyard
+
+      routes do
+        get '/', to: 'root#index'
+      end
 
     end
   end

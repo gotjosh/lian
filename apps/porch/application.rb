@@ -1,6 +1,6 @@
 require 'lotus'
 
-module LianPorch
+module Porch
   class Application < Lotus::Application
     configure do
       root File.dirname(__FILE__)

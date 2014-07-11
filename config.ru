@@ -1,11 +1,11 @@
-require_relative 'apps/lian_porch/application'
-require_relative 'apps/lian_backyard/application'
+require_relative 'apps/porch/application'
+require_relative 'apps/backyard/application'
 
 
 run Lotus::Router.new {
 
-  mount LianBackyard::Application, at: '/backyard'
+  mount Backyard::Application, at: '/backyard'
 
-  mount LianPorch::Application, at: '/'
+  mount Porch::Application, at: '/'
 }
 
