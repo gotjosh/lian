@@ -1,11 +1,4 @@
-require_relative 'apps/porch/application'
-require_relative 'apps/backyard/application'
+require_relative 'config/applications'
 
 
-run Lotus::Router.new {
-
-  mount Backyard::Application, at: '/backyard'
-
-  mount Porch::Application, at: '/'
-}
-
+run Lian::Application.new
