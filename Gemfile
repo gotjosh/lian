@@ -6,6 +6,7 @@ gem 'haml'
 gem 'rake', '~> 10.3'
 
 group :development do
-  gem 'pry'
-  gem 'pry-plus'
+end
+
+group :test do
 end
