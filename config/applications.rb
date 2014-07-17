@@ -1,5 +1,6 @@
 LOTUS_ENV = ENV["LOTUS_ENV"] || "development"
 
+require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default, LOTUS_ENV)
 
